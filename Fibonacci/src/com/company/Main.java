@@ -18,7 +18,7 @@ public class Main {
         for(int i = 2; i < a; i++) {
             x[i] = x[i-1] + x[i-2];
         }
-        for (int i = 0; i < a; i++) {
+        for (int i = a-1; i >= 0; i--) {
             System.out.print(x[i] +  " ");
         }
     }
