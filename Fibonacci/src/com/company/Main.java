@@ -15,11 +15,13 @@ public class Main {
         long x[] = new long[a];
         x[0] = 1;
         x[1] = 1;
+        long sum=0;
         for(int i = 2; i < a; i++) {
             x[i] = x[i-1] + x[i-2];
         }
         for (int i = 0; i < a; i++) {
-            System.out.print(x[i] +  " ");
+            sum = sum + x[i];
         }
+        System.out.println(sum);
     }
 }
